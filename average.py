@@ -1,23 +1,28 @@
 """AVERAGE"""
 
+def calculateAv(list):
+    sum = 0
+    for x in range(len(list)):
+        item = list[x]
+        sum = sum + item
+    print('\nSum: ', sum)
+    div = len(list)
+    result = sum/div
+    print('\n******* Average: ', '%.2f' % result, '*******\n')
+    return result
 
 def main():
     print('********* CALCULATING AVERAGES *********\n \n')
 
-    print('Type your list of numbers: \n')
-
+    num = int(input('How many numbers? '))
     n = ''
     array = []
-    
-    while n!='end':
-        n = input()
+    print('\n')
+    for i in range(num):
+        n = float(input('Type the number: '))
         array.append(n)
-        
-    if n=='end':
-        array.remove(n)
-        print('\n----end of the list----')
-
-    print(array)
     
+    print('\nYour list: ', array)
+    calculateAv(array)
     
 main()
