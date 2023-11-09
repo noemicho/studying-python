@@ -14,15 +14,16 @@ def calculateAv(list):
 def main():
     print('********* CALCULATING AVERAGES *********\n \n')
 
-    num = int(input('How many numbers? '))
-    n = ''
-    array = []
-    print('\n')
-    for i in range(num):
-        n = float(input('Type the number: '))
-        array.append(n)
-    
-    print('\nYour list: ', array)
-    calculateAv(array)
+    while True:
+        num = int(input('How many numbers? '))
+        n = ''
+        array = []
+        print('\n')
+        for i in range(num):
+            n = float(input('Type the number: '))
+            array.append(n)
+        
+        print('\nYour list: ', array)
+        calculateAv(array)
     
 main()
