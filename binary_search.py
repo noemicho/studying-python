@@ -21,13 +21,15 @@ def binary_search(listN, num):
 
 
 def main():
-    print('*********BINARY SEARCH*********\n \n')
 
-    listN = input('Enter your list of numbers: ')
-    num = int(input('TARGET? '))
-    result = binary_search(listN, num)
-    print('Index:', result)
-    if result == -1:
-        print('Not found')
+    while True:
+        print('*********BINARY SEARCH*********\n \n')
+
+        listN = input('Enter your list of numbers: ')
+        num = int(input('TARGET? '))
+        result = binary_search(listN, num)
+        print('Index:', result)
+        if result == -1:
+            print('Not found')
 
 main()
