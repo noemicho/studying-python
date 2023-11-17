@@ -24,9 +24,12 @@ def defineOp(op, number1, number2):
         print('RESULT: ', result)
         return result
     elif op == '/':
-        result = div(number1, number2)
-        print('RESULT: ', result)
-        return result
+        if number2 != 0:
+            result = div(number1, number2)
+            print('RESULT: ', result)
+            return result
+        else:
+            print('Division by zero is not allowed')
     elif op == '*':
         result = mult(number1, number2)
         print('RESULT: ', result)
